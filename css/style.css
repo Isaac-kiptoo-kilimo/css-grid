@@ -1,11 +1,8 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-
 
 body {
   min-height: 100vh;
@@ -14,16 +11,16 @@ body {
   scroll-behavior: smooth;
 }
 
-
-
 img,
 picture {
   max-width: 100%;
   display: block;
 }
-.list{
+
+.list {
   list-style: none;
 }
+
 input,
 button,
 textarea,
@@ -59,17 +56,15 @@ a {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr repeat(10, minmax(min-content, 6.875rem)) 1fr;
+  grid-template-columns: 1fr repeat(10, minmax(min-content, 110px)) 1fr;
   background-color: var(--custom-white);
-  gap: 2rem;
+  gap: 20px;
 }
-
-
 
 .header__main {
   grid-column: 2 / 12;
-  padding: 0 calc(1rem + 2vw);
-  margin-top: calc(2rem + 2vh);
+  padding: 0 calc(16px + 2vw);
+  margin-top: calc(32px + 2vh);
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -78,10 +73,9 @@ a {
 header span {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 48px;
   color: var(--bck-black);
 }
-
 
 .logo {
   margin-right: auto;
@@ -95,7 +89,7 @@ header span {
 
 .nav__main ul {
   display: flex;
-  gap: 2rem;
+  gap: 20px;
 }
 
 .nav__main .hambuger {
@@ -106,7 +100,7 @@ header span {
   place-items: center;
   opacity: 0;
 }
- 
+
 .nav__main .hambuger div {
   width: 100%;
   height: 4px;
@@ -114,7 +108,7 @@ header span {
   position: relative;
 }
 
-.nav__main .hambuger::before, 
+.nav__main .hambuger::before,
 .nav__main .hambuger::after {
   content: '';
   position: absolute;
@@ -133,7 +127,7 @@ header span {
 
 .nav__main ul li a {
   color: var(--custom-grey);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -142,12 +136,9 @@ header span {
   cursor: pointer;
 }
 
-
-
 .image__container {
   grid-column: 2 / 9;
-
-  padding: 0 0 0 calc(1rem + 2vw);
+  padding: 0 0 0 calc(16px + 2vw);
 }
 
 .image__container > img {
@@ -155,16 +146,14 @@ header span {
   height: auto;
 }
 
-
 .hero__section {
   display: grid;
   grid-column: 2 / 9;
-  padding: 0 0 0 calc(1rem + 2vw);
-  gap: 2rem;
+  padding: 0 0 0 calc(16px + 2vw);
+  gap: 20px;
   grid-template-columns: 1fr 1.5fr;
   grid-template-rows: min-content;
 }
-
 
 .hero__title {
   display: grid;
@@ -172,22 +161,20 @@ header span {
 }
 
 .hero__title h1 {
-  font-size: calc(2.75rem + 1vw);
+  font-size: 44px;
   line-height: 1;
   font-weight: var(--bold);
 }
 
-
 .hero__content {
-  padding: 0 .5rem;
-
+  padding: 0 8px;
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  row-gap: 2rem;
+  row-gap: 20px;
 }
 
 .hero__content p {
-  font-size: calc(.85rem + .5vw);
+  font-size: 18px;
 }
 
 .hero__content button {
@@ -196,23 +183,22 @@ header span {
   border: 0px solid var(--pry-clr);
   background-color: var(--pry-clr);
   color: var(--custom-white);
-  padding: 1rem 2rem;
-  width: 11.25rem;
+  padding: 16px 32px;
+  width: 180px;
   height: auto;
-  font-size: 1rem;
+  font-size: 16px;
 }
-
 
 .main__aside {
   background-color: var(--bck-black);
   grid-column: 9 / 12;
   grid-row: 2 / 4;
   color: white;
-  gap: 2rem;
-
+  gap: 20px;
+  width: 330px;
   display: grid;
-  grid-template-rows: .1fr (repeat(3, 1fr));
-  padding: 1rem;
+  grid-template-rows: 0.1fr repeat(3, 1fr);
+  padding: 16px;
 }
 
 .main__aside > div {
@@ -223,48 +209,40 @@ header span {
 .main__aside > div:nth-of-type(3)::after {
   position: absolute;
   content: '';
-  bottom: -1rem;
+  bottom: -16px;
   width: 100%;
   height: 1px;
   background-color: var(--custom-grey);
 }
 
 .main__aside--heading h2 {
-  font-size: calc(1.5rem + 1vw);
+  font-size: 36px;
   color: var(--sec-clr);
 }
 
-
 .main__aside > div h3 {
-  font-size: calc(.5rem + 1vw);
+  font-size: 20px;
   font-weight: var(--regular);
   font-weight: 500;
 }
 
 .main__aside > div p {
-  font-size: calc(.65rem + .5vw);
-  opacity: .5;
+  font-size: 21px;
+  opacity: 0.5;
   font-weight: var(--regular);
 }
 
-.main__aside >div:nth-of-type(2){
-  margin-top: -1rem;
+.main__aside > div:nth-of-type(2) {
+  margin-top: -16px;
 }
-
-
-
 
 .footer {
   grid-column: 2 / 12;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-
-  padding: 2rem;
-
+  gap: 20px;
+  padding: 32px;
 }
-
 
 .footer__group__image {
   width: 100%;
@@ -276,12 +254,10 @@ header span {
   height: auto;
 }
 
-
 footer > div {
   display: flex;
-  gap: 1rem;
+  gap: 20px;
 }
-
 
 .footer__group__content {
   display: flex;
@@ -290,78 +266,73 @@ footer > div {
 }
 
 .footer__group__content h3 {
-  font-size: 2rem;
+  font-size: 32px;
   color: var(--custom-grey);
 }
 
 .footer__group__content h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: var(--bold);
   color: var(--bck-black);
 }
 
 .footer__group__content p {
-  font-size: 1rem;
+  font-size: 16px;
   opacity: 80%;
-
 }
 
-
-
-@media (min-width:601px) and (max-width: 800px) {
-
-  .container > div{
-    padding-right: 2rem;
+@media (min-width: 601px) and (max-width: 800px) {
+  .container > div {
+    padding-right: 32px;
   }
 
   .main__aside {
-    margin-right: 2rem;
+    margin-right: 32px;
   }
 
   .image__container .mobile__size {
     display: none;
   }
 
-  .image__container, .hero__section, .main__aside {
+  .image__container,
+  .hero__section,
+  .main__aside {
     grid-column: 2 / 12;
   }
 
-.main__aside {
-  grid-row: 4;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1rem 1fr;
-  margin-left: 2rem;
+  .main__aside {
+    grid-row: 4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 16px 1fr;
+    margin-left: 32px;
+  }
+
+  .main__aside--heading {
+    grid-column: 1 / -1;
+  }
+
+  .footer__group__content h3 {
+    font-size: 28px;
+  }
+
+  .footer__group__content h2 {
+    font-size: 16px;
+  }
+
+  .footer__group__content p {
+    font-size: 12px;
+  }
+
+  .footer__group__image {
+    width: 160px;
+    height: 100%;
+  }
+
+  .footer__group__image img {
+    width: 100%;
+    height: auto;
+  }
 }
-
-.main__aside--heading {
-  grid-column: 1 / -1;
-}
-
-.footer__group__content h3 {
-  font-size: 1.75rem;
-}
-
-.footer__group__content h2 {
-  font-size: 1rem;
-}
-
-.footer__group__content p {
-  font-size: .75rem;
-}
-
-.footer__group__image {
-  width: 20rem;
-  height: 100%;
-}
-
-.footer__group__image img {
-  width: 100%;
-  height: auto;
-}
-
-
-}
-
 
 @media screen and (min-width: 801px) {
   .image__container .mobile__size {
